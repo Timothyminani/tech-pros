@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5cdba9a5c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navber">
+        <img src="logo.png" height="60px" >
+        <p class="imgp">TechPros</p>
+        <ul id="nav">
+            <li><i id="close"   class="fa-solid fa-xmark"></i></li>
+            <li><a class="active" href="homepage.html">HOME</a></li>
+            <li><a  href="newpropage.html">PRODUCTS</a></li>
+            <li><a  href="service.html">SERVICE</a></li>
+            <li><a   href="about.html">ABOUT</a></li>
+            <li><a  href="contact.html">CONTUCT</a></li>
+            <li><span class="search_bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+         <form>
+            <input type="text" placeholder="Search a product.....">
+         </form>
+            </span>
+        </li>
+            <span class="carticon">
+            <li><a  href=""><i class="fa-solid fa-cart-plus"></i></a></li>
+            <i  id="side"    class="fa-solid fa-bars"></i>
+           </span>
+        </ul>
+           </nav>
+           
+           <div class="mobile">
+            <a  href=""><i class="fa-solid fa-cart-plus"></i></a>
+            <i  id="side"    class="fa-solid fa-bars"></i>
+           
+        </div>
+    <section class="singlep_container">
+        <div class="bigpic_smallpic_container">
+        <div class="pic_container">
+            <img src="laptop1.jpg" width="400px" height="400px" margin-top="30px" id="mainimage">
+        
+        </div>
+        <div class="smallpic_container">
+        <div class="smallpic">
+           <img src="laptop2.jpg" width="90px" height="90px" class="smallimage" alt="">
+        </div>
+        <div class="smallpic">
+            <img src="laptop3.jpg" width="90px" height="90px" class="smallimage" alt="">
+        </div>
+        <div class="smallpic">
+            <img src="laptop4.jpg" width="90px" height="90px" class="smallimage" alt="">
+        </div>
+        <div class="smallpic">
+            <img src="laptop5.jpg" width="90px" height="90px" class="smallimage" alt="">
+        </div>
+    </div>
+    </div>
+
+
+        <div class="detailcontainer">
+            <h2>HP ELITEBOOK</h2>
+            <h4>REFURBISHED</h4>
+            <h5>Features:</h5>
+            <ul>
+                <li>AMD Ryzen 5</li>
+                <li>8GB RAM 2.1GHz</li>
+                <li>256GB SSD</li>
+                <li>2GB Radeon Graphics</li>
+                <li>14" Full HD Display</li>
+                <li>1 Year Warrenty</li>
+                <li>AMD Ryzen 5</li>
+                <li>8GB RAM 2.1GHz</li>
+                <li>256GB SSD</li>
+                <li>2GB Radeon Graphics</li>
+            </ul>
+          <p class="price">Price: <span class="color">Ksh24000</span> <span class="cross"> Ksh28000</p></span>
+          <div class="quantity_container">
+          <p class="quantity">Quantity:</p>
+                <button id="sub">-</button>
+                <label id="counter">0</label>
+                <button id="sum">+</button>
+        
+
+          </div>
+          <div class="cart_container">
+           <button class="cart_button">Add to Cart</button>
+           <button class="cart_button">Buy it Now</button>
+          </div>
+        </div>
+
+        <div class="delivery">
+            <div class="delivery_icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            
+ <h3>Delivery & Returns</h3>
+ <hr>
+ <div class="location">
+    <i class="fa-solid fa-location-dot"></i>
+    <p class="location_text">Choose Your Location</p>
+ </div>
+
+ <select class="location_county">
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+ </select>
+
+ <select class="location_subcounty">
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+    <option>Nairobi</option>
+ </select>
+        </div>
+    </section>
+
+<script>
+    var mainimage = document.getElementById("mainimage");
+var smallimage = document.getElementsByClassName("smallimage");
+
+smallimage[0].onclick = function(){
+    mainimage.src = smallimage[0].src;
+}
+
+smallimage[1].onclick = function(){
+    mainimage.src = smallimage[1].src;
+}
+
+smallimage[2].onclick = function(){
+    mainimage.src = smallimage[2].src;
+}
+
+smallimage[3].onclick = function(){
+    mainimage.src = smallimage[3].src;
+}
+
+
+
+
+</script>
+
+<script>
+
+
+
+</script>
+  <sript src="script.js"></sript>
+</body>
+</html>
